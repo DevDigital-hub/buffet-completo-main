@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Evento Buffet</title>
+</head>
+<body>
+  <form action="/gerar-pdf" method="POST">
+    <label>Nome do Evento:</label>
+    <input type="text" name="nome" required><br>
+
+    <label>Data:</label>
+    <input type="date" name="data" required><br>
+
+    <label>Local:</label>
+    <input type="text" name="local" required><br>
+
+    <label>Quantidade de Pessoas:</label>
+    <input type="number" name="pessoas" required><br>
+
+    <label>Observações:</label>
+    <textarea name="observacoes"></textarea><br>
+
+    <button type="submit">Gerar PDF</button>
+  </form>
+</body>
+</html>

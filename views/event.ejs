@@ -1,0 +1,15 @@
+<h1>Evento: <%= Appo.name %> </h1>
+<hr>
+<h4>Local do evento: <%= Appo.locale %> </h4>
+<h4>Data: <%= Appo.date %> </h4>
+<h4>Descrição: <%= Appo.desc %></h4>
+<hr>
+<% if (!Appo.finished) { %>
+   <% if (!Appo.finished) { %>
+  <form action="/finished" method="post">
+    <input type="hidden" name="id" value="<%= Appo._id %>">
+    <button type="submit">Finalizar evento</button>
+  </form>
+<% } %>
+
+<% } %>
